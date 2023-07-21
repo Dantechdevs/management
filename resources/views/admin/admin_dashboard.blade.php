@@ -7,6 +7,6 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h1>Admin Dashboard</h1>
+    <h1>Admin Dashboard changed </h1>
 </body>
 </html>
