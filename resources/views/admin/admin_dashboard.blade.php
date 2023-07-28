@@ -17,23 +17,23 @@
   <!-- End fonts -->
 
 	<!-- core:css -->
-	<link rel="stylesheet" href="{{ asset('../assets/vendors/core/core.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/vendors/core/core.css') }}">
 	<!-- endinject -->
 
 	<!-- Plugin css for this page -->
 	<!-- End plugin css for this page -->
-	<link rel="stylesheet" href="{{ asset('../assets/vendors/flatpickr/flatpickr.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/vendors/flatpickr/flatpickr.min.css') }}">
 
 	<!-- inject:css -->
-	<link rel="stylesheet" href="{{ asset('../assets/fonts/feather-font/css/iconfont.css') }}">
-	<link rel="stylesheet" href="{{ asset('../assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
 	<!-- endinject -->
 
   <!-- Layout styles -->  
-	<link rel="stylesheet" href="{{ asset('../assets/css/demo2/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/demo2/style.css') }}">
   <!-- End layout styles -->
 
-  <link rel="shortcut icon" href="{{ asset('../assets/images/favicon.png') }}" />
+  <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
 </head>
 <body>
 	<div class="main-wrapper">
@@ -287,12 +287,13 @@
 				</div>
 			</nav>
 			<!-- partial -->
-
+            @include('admin.partials.navbar')
+            @include('admin.partials.sidebar')
 			@yield('admin')
 
 			<!-- partial:partials/_footer.html -->
 			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
-				<p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>.</p>
+				<p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">dantechdevs</a>.</p>
 				<p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p>
 			</footer>
 			<!-- partial -->
@@ -301,21 +302,21 @@
 	</div>
 
 	<!-- core:js -->
-	<script src="{{ asset('../assets/vendors/core/core.js') }}"></script>
+	<script src="{{ asset('assets/vendors/core/core.js') }}"></script>
 	<!-- endinject -->
 
 	<!-- Plugin js for this page -->
-  <script src="{{ asset('../assets/vendors/flatpickr/flatpickr.min.js') }}"></script>
-  <script src="{{ asset('../assets/vendors/apexcharts/apexcharts.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/flatpickr/flatpickr.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/apexcharts/apexcharts.min.js') }}"></script>
 	<!-- End plugin js for this page -->
 
 	<!-- inject:js -->
-	<script src="{{ asset('../assets/vendors/feather-icons/feather.min.js') }}"></script>
-	<script src="{{ asset('../assets/js/template.js') }}"></script>
+	<script src="{{ asset('assets/vendors/feather-icons/feather.min.js') }}"></script>
+	<script src="{{ asset('assets/js/template.js') }}"></script>
 	<!-- endinject -->
 
 	<!-- Custom js for this page -->
-  <script src="{{ asset('../assets/js/dashboard-dark.js') }}"></script>
+  <script src="{{ asset('assets/js/dashboard-dark.js') }}"></script>
 	<!-- End custom js for this page -->
 
 </body>
